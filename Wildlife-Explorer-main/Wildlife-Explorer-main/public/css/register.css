@@ -1,0 +1,124 @@
+/* 
+* Main styling
+*/
+.content {
+  gap: 16px;
+}
+
+.banner {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: var(--color-primary-light);
+}
+
+.banner__title {
+  width: 70%;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.banner__description {
+  padding: 16px;
+}
+
+.form {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: var(--color-secondary-light);
+}
+
+.form__title {
+  align-self: center;
+  width: 70%;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 0.5px solid black;
+}
+
+.form__label {
+  margin: 8px 15%;
+}
+
+
+.form__label-required {
+  color: red;
+}
+
+.form__input {
+  margin: 0 15%;
+  max-width: 16rem;
+}
+
+.form__input:invalid {
+  border: 1.5px solid red;
+}
+
+.form__input:valid {
+  border: 1.2px solid var(--color-primary-medium);
+}
+
+.form__label--checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.form__input--checkbox {
+  margin: 8px 0;
+}
+
+.form__checkbox-text {
+  margin-left: 1rem;
+}
+
+.form__button {
+  align-self: center;
+  padding: 8px 16px;
+  border: none;
+  border-bottom: 2px solid var(--color-primary-medium);
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-medium);
+}
+
+.form__button:hover,
+.form__button:focus-within {
+  cursor: pointer;
+  border-bottom: 2px solid var(--color-primary-medium);
+  color: var(--color-primary-medium);
+  background-color: var(--color-primary-light);
+}
+
+.form__mandatory-field-note {
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  color: red;
+  grid-column: span 12;
+}
+
+/* Mobile styling */
+@media screen and (max-width: 50rem) {
+  .form {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+}
+
+/* Transitions only when the user has not set motion preference */
+
+@media (prefers-reduced-motion: no-preference) {
+  .form__button {
+    transition: background-color 0.4s, color 0.5s;
+  }
+}

@@ -1,0 +1,15 @@
+Images used in this website:
+
+logo.jpg   , link: https://unsplash.com/photos/a-bird-flying-in-front-of-a-sunset-60_JVLqdsfw
+index1.jpg , link: https://unsplash.com/photos/raccoon-walking-on-lawn-grass-6GMq7AGxNbE
+index2.jpg , link: https://unsplash.com/photos/three-blue-and-yellow-parrots-on-tree-branch-hXttDVCwyRA
+index3.jpg , link: https://unsplash.com/photos/brown-reindeer-z6QkzFpB0vY
+index4.jpg , link: https://unsplash.com/photos/lion-lying-on-black-textile-d8N0we_W-AQ
+about1.jpg , link: https://unsplash.com/photos/panda-eating-bamboo-_9a-3NO5KJE
+about2.jpg , link: https://unsplash.com/photos/pink-flamingo-on-water-during-daytime-TKu8-LD2MyM
+about3.jpg , link: https://unsplash.com/photos/brown-squirrel-rOv3ktFv4pk
+
+These images are downloaded from unsplash.com under MIT liscense.
+
+
+

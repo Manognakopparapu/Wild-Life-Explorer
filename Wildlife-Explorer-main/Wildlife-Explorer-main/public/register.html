@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Register for Save Wild Life Organization!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__link"
+        ><img src="images/logo.jpg" alt="A bird flying during sunset" class="header__logo"
+      /></a>
+      <h1 class="header__title">Wildlife Explorer</h1>
+      <nav class="header__navbar">
+        <span class="header__nav-menu-icon"><i class="gg-menu-left"></i></span>
+        <nav class="header__nav-menu">
+          <a href="index.html" class="header__nav-link">Home</a>
+          <a href="about.html" class="header__nav-link">About</a>
+          <a href="register.html" class="header__nav-link">Register</a>
+        </nav>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="banner">
+        <h2 class="banner__title">Register for Save Wild Life Organization!</h2>
+        <p class="banner__description">
+          Welcome to S.W.L.O.! We're dedicated to conserving wildlife globally through awareness, research, and action. 
+          Your support helps fund vital projects, rescue injured animals, and advocate for stronger environmental policies. 
+          Join us in protecting our planet's biodiversity. Thank you for being part of our community!
+        </p>
+      </section>
+      <form action="register" method="POST" class="form">
+        <h3 class="form__title">Registration Form</h3>
+        <label for="input-name" class="form__label">
+          Name:
+          <span class="form__label-required" aria-label="required"
+            >*</span
+          >
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="input-name"
+          class="form__input"
+          required
+        />
+        <label for="input-email" class="form__label">
+          Email:
+          <span class="form__label-required" aria-label="required"
+            >*</span
+          >
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="input-email"
+          class="form__input"
+          required
+        />
+        <label for="input-select" class="form__label">
+          Have you ever been to Wild?:
+          <span class="form__label-required" aria-label="required"
+            >*</span
+          >
+        </label>
+        <select
+          name="Been to Wild"
+          id="input-select"
+          class="form__input form__input--dropdown"
+          required
+        >
+          <option value="" class="form__option">--Please Select--</option>
+          <option value="Yes" class="form__option">Yes</option>
+          <option value="No" class="form__option">No</option>
+        </select>
+        <label
+          class="form__label form__label--checkbox"
+        >
+          <input
+            type="checkbox"
+            class="form__input form__input--checkbox"
+            name="email_subscription"
+            checked
+          />
+          <span class="form__checkbox-text"
+            >Would you like to receive emails from us?</span
+          >
+        </label>
+        <button type="submit" class="form__button">
+          Register
+        </button>
+        <p class="form__mandatory-field-note">* indicated fields are mandatory</p>
+      </form>
+    </main>
+    <footer class="footer">
+      <a href="https://unsplash.com/s/photos/animals" class="footer__link">Gallery</a>
+      <a href="register.html" class="footer__link">Follow</a>
+      <a href="help.html" class="footer__link">Help</a>
+      <a href="privacy.html" class="footer__link">Privacy Policy</a>
+      <p class="footer__copyright">© 2024 Wildlife Explorer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

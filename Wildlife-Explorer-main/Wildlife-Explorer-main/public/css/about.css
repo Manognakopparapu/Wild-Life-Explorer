@@ -1,0 +1,123 @@
+/*
+* Main styling
+*/
+
+.primary-content {
+  grid-column: span 12;
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: max-content;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-medium);
+}
+
+.primary-content-image {
+  align-self: center;
+  padding: 16px;
+  width: 50%;
+  height: auto;
+}
+
+.primary-content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 16px;
+  width: 67%;
+}
+
+.primary-content-title {
+  text-align: center;
+  width: 70%;
+  border-bottom: 1px solid black;
+}
+
+.primary-content-description {
+  padding: 16px;
+}
+
+.card-content {
+  grid-column: span 6;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--color-primary-light);
+}
+
+.card-content:hover,
+.card-content:focus-within {
+  background-color: var(--color-secondary-light);
+}
+
+.card-content-title {
+  padding: 8px;
+  width: 70%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.card-content-image {
+  width: 90%;
+  height: auto;
+  padding: 16px;
+}
+
+.card-content-description {
+  padding: 8px;
+}
+
+.card-content-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: whitesmoke;
+  background: #f09433;
+  background: #76265d;
+}
+
+.card-content-link:hover,
+.card-content-link:focus-within {
+  border-bottom: 1px solid black;
+  text-decoration: underline;
+}
+
+.card-content-link-text {
+  padding-left: 8px;
+}
+
+/* Mobile styling */
+@media screen and (max-width: 50rem) {
+  .primary-content {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .primary-content-image {
+    width: 80%;
+  }
+
+  .primary-content-container {
+    width: 90%;
+  }
+
+  .card-content {
+    grid-column: span 12;
+  }
+}
+
+/* Transitions only when user has not set motion preference */
+
+@media (prefers-reduced-motion: no-preference) {
+  .card-content {
+    transition: background-color 1s;
+  }
+}
